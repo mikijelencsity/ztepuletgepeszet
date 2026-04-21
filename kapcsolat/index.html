@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapcsolat – ZT Épületgépészet</title>
+  <meta name="description" content="Vegye fel a kapcsolatot ZT Épületgépészettel! Ingyenes helyszíni felmérés Kecskeméten. +36/20 221 0555">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .map-placeholder {
+      width: 100%; height: 320px;
+      background: var(--cream);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 0.5rem;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+    .map-placeholder p { font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="../index.html"><span>ZT</span> Épületgépészet</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Főoldal</a></li>
+    <li><a href="../szolgaltatasaim/index.html">Szolgáltatásaim</a></li>
+    <li><a href="../referenciak/index.html">Referenciák</a></li>
+    <li><a href="index.html" class="nav-cta active">Kapcsolat</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+  <div class="container">
+    <div class="eyebrow anim-1">Kapcsolatfelvétel</div>
+    <h1 class="anim-2">Lépjünk<br><em>kapcsolatba!</em></h1>
+    <p class="anim-3">Ha víz-, gáz-, fűtésszerelésre vagy klímatelepítésre keres szakembert, örömmel állok rendelkezésére. Ingyenes helyszíni felmérést biztosítok Kecskeméten és környékén.</p>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="section section--white">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Info + FAQ -->
+      <div>
+        <div class="section-tag reveal">Elérhetőségek</div>
+        <h2 class="section-title reveal" style="margin-bottom:1.5rem">Mindig<br><em>elérhető vagyok</em></h2>
+        <p class="contact-desc reveal">Kecskeméten és környékén ingyenes helyszíni felmérést biztosítok, de az ország bármely pontján vállalok épületgépészeti munkákat.</p>
+
+        <div class="contact-info-list reveal">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-text">
+              <strong>Telefon</strong>
+              <a href="tel:+36202210555">+36/20 221 0555</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div class="contact-info-text">
+              <strong>E-mail</strong>
+              <a href="mailto:ztepuletgepeszet@gmail.com">ztepuletgepeszet@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <strong>Székhely</strong>
+              <span>6000 Kecskemét</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📘</div>
+            <div class="contact-info-text">
+              <strong>Facebook</strong>
+              <a href="https://www.facebook.com/profile.php?id=61583192375424" target="_blank" rel="noopener">ZT Épületgépészet</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="margin-top:3.5rem">
+          <div class="section-tag reveal" style="margin-bottom:1.25rem">Gyakori kérdések</div>
+          <div class="faq-list reveal">
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="faq-question-text">Milyen területen vállalok munkát?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer"><div class="faq-answer-inner">
+                Kecskeméten és környékén <strong>ingyenes</strong> helyszíni felmérést biztosítok,
+                de az ország bármely pontján vállalok épületgépészeti kivitelezést – kisebb
+                lakossági és nagyobb ipari projektek esetén is.
+              </div></div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="faq-question-text">Telepítek és karbantartok klímát is?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer"><div class="faq-answer-inner">
+                Igen. Lakossági és ipari klímaberendezések telepítését, tisztítását és karbantartását
+                is végzem. Segítek a megfelelő készülék kiválasztásában, és a teljes telepítést
+                elvégzem a helyszínen.
+              </div></div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="faq-question-text">Mennyi idő alatt készül el egy munka?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer"><div class="faq-answer-inner">
+                A kivitelezés ideje a projekt méretétől függ. Kisebb munkák általában 1–3 nap alatt,
+                míg nagyobb ipari rendszerek néhány hét alatt készülnek el. Mindig előre egyeztetett
+                ütemezéssel dolgozom, hogy pontosan tudja, mire számíthat.
+              </div></div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="faq-question-text">Mennyibe kerül a helyszíni felmérés?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer"><div class="faq-answer-inner">
+                A helyszíni felmérés Kecskeméten és környékén teljesen <strong>ingyenes</strong>.
+                A pontos ár mindig a helyszín, a rendszer mérete és az anyagigény alapján készül el,
+                átlátható és tételes árajánlat formájában.
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-box reveal">
+        <div class="form-title">Küldjön üzenetet</div>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nev">Neve *</label>
+              <input type="text" id="nev" name="nev" placeholder="Kovács János" required>
+            </div>
+            <div class="form-group">
+              <label for="tel">Telefonszám *</label>
+              <input type="tel" id="tel" name="tel" placeholder="+36 20 ...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail cím *</label>
+            <input type="email" id="email" name="email" placeholder="email@pelda.hu" required>
+          </div>
+          <div class="form-group">
+            <label for="szolg">Szolgáltatás</label>
+            <select id="szolg" name="szolgaltatas">
+              <option value="">Válasszon...</option>
+              <option value="viz">Vízszerelés</option>
+              <option value="futes">Fűtésszerelés</option>
+              <option value="gaz">Gázszerelés</option>
+              <option value="klima">Klímaszerelés</option>
+              <option value="egyeb">Egyéb</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="uzenet">Üzenet</label>
+            <textarea id="uzenet" name="uzenet" placeholder="Írja le, miben segíthetek Önnek..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Üzenet küldése</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="footer-brand-logo" href="../index.html"><span>ZT</span> Épületgépészet</a>
+        <p class="footer-brand-desc">Innovatív épületgépészeti megoldások víz-, gáz-, fűtés- és klímatechnikában.</p>
+        <div class="footer-social"><a href="https://www.facebook.com/profile.php?id=61583192375424" target="_blank" rel="noopener">📘 Facebook</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigáció</div>
+        <ul class="footer-col-links">
+          <li><a href="../index.html">Főoldal</a></li>
+          <li><a href="../szolgaltatasaim/index.html">Szolgáltatásaim</a></li>
+          <li><a href="../referenciak/index.html">Referenciák</a></li>
+          <li><a href="index.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Elérhetőség</div>
+        <ul class="footer-col-links">
+          <li><a href="tel:+36202210555">+36/20 221 0555</a></li>
+          <li><a href="mailto:ztepuletgepeszet@gmail.com">ztepuletgepeszet@gmail.com</a></li>
+          <li>6000 Kecskemét</li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Jogi</div>
+        <ul class="footer-col-links">
+          <li><a href="../adatvedelem/index.html">Adatvédelem</a></li>
+          <li><a href="../aszf/index.html">ÁSZF</a></li>
+          <li><a href="../impresszum/index.html">Impresszum</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ZT Épületgépészet – Minden jog fenntartva.</span>
+      <span><a href="../adatvedelem/index.html">Adatvédelem</a> · <a href="../aszf/index.html">ÁSZF</a> · <a href="../impresszum/index.html">Impresszum</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

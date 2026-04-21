@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Referenciák – ZT Épületgépészet</title>
+  <meta name="description" content="ZT Épületgépészet referenciái – elkészült munkák, elégedett ügyfelek. Vízszerelés, fűtés, gáz és klíma kivitelezés Kecskeméten.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+    .reveal.revealed { opacity: 1; transform: none; }
+
+    .filter-bar {
+      display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 3rem;
+    }
+    .filter-btn {
+      padding: 0.5rem 1.2rem; border-radius: 30px;
+      border: 1.5px solid var(--border); background: none;
+      font-family: 'DM Sans', sans-serif; font-size: 0.85rem;
+      color: var(--muted); cursor: pointer; transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--crimson); border-color: var(--crimson);
+      color: white;
+    }
+
+    .testimonials {
+      display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem;
+      margin-top: 5rem;
+    }
+    .testimonial-card {
+      background: var(--white); border-radius: 12px;
+      padding: 2rem; border: 1px solid var(--border);
+    }
+    .testimonial-stars { color: var(--crimson); font-size: 0.9rem; margin-bottom: 0.75rem; }
+    .testimonial-text {
+      color: var(--muted); font-size: 0.95rem; line-height: 1.75;
+      font-weight: 300; margin-bottom: 1.25rem; font-style: italic;
+    }
+    .testimonial-author { font-weight: 500; font-size: 0.88rem; color: var(--text); }
+    .testimonial-role { font-size: 0.8rem; color: var(--muted); }
+
+    @media (max-width: 680px) {
+      .testimonials { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="../index.html"><span>ZT</span> Épületgépészet</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Főoldal</a></li>
+    <li><a href="../szolgaltatasaim/index.html">Szolgáltatásaim</a></li>
+    <li><a href="index.html" class="active">Referenciák</a></li>
+    <li><a href="../kapcsolat/index.html" class="nav-cta">Kapcsolat</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+  <div class="container">
+    <div class="eyebrow anim-1">Elkészült munkák</div>
+    <h1 class="anim-2">Referenciáim –<br><em>büszkeségeim</em></h1>
+    <p class="anim-3">Tekintsd meg az elmúlt időszak legszebb munkáit. Minden projekt egyedi figyelmet és precizitást kap.</p>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="section section--cream">
+  <div class="container">
+
+    <div class="filter-bar reveal" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">Összes</button>
+      <button class="filter-btn" data-filter="viz">Vízszerelés</button>
+      <button class="filter-btn" data-filter="futes">Fűtésszerelés</button>
+      <button class="filter-btn" data-filter="gaz">Gázszerelés</button>
+      <button class="filter-btn" data-filter="klima">Klímaszerelés</button>
+    </div>
+
+    <div class="ref-grid" id="ref-grid">
+
+      <div class="ref-card reveal" data-cat="klima">
+        <div class="ref-card-img-placeholder">❄️</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Klímaszerelés</div>
+          <div class="ref-card-title">Inverteres klímarendszer telepítése</div>
+          <div class="ref-card-loc">📍 Kecskemét, lakóépület</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="futes">
+        <div class="ref-card-img-placeholder">🔥</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Fűtésszerelés</div>
+          <div class="ref-card-title">Padlófűtés kiépítése új építésű házban</div>
+          <div class="ref-card-loc">📍 Kecskemét környéke</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="viz">
+        <div class="ref-card-img-placeholder">🔧</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Vízszerelés</div>
+          <div class="ref-card-title">Fürdőszoba teljes vízszerelési felújítás</div>
+          <div class="ref-card-loc">📍 Kecskemét</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="gaz">
+        <div class="ref-card-img-placeholder">🔴</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Gázszerelés</div>
+          <div class="ref-card-title">Kondenzációs gázkazán csere</div>
+          <div class="ref-card-loc">📍 Kecskemét</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="klima">
+        <div class="ref-card-img-placeholder">❄️</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Klímaszerelés</div>
+          <div class="ref-card-title">Multi-split rendszer irodaépületbe</div>
+          <div class="ref-card-loc">📍 Bács-Kiskun megye</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="futes">
+        <div class="ref-card-img-placeholder">🔥</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Fűtésszerelés</div>
+          <div class="ref-card-title">Hőszivattyú telepítés és beüzemelés</div>
+          <div class="ref-card-loc">📍 Kecskemét környéke</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="viz">
+        <div class="ref-card-img-placeholder">🔧</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Vízszerelés</div>
+          <div class="ref-card-title">Ipari vízhálózat kialakítása</div>
+          <div class="ref-card-loc">📍 Bács-Kiskun megye</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="gaz">
+        <div class="ref-card-img-placeholder">🔴</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Gázszerelés</div>
+          <div class="ref-card-title">Gáztűzhely bekötés és beüzemelés</div>
+          <div class="ref-card-loc">📍 Kecskemét</div>
+        </div>
+      </div>
+
+      <div class="ref-card reveal" data-cat="futes">
+        <div class="ref-card-img-placeholder">🔥</div>
+        <div class="ref-card-body">
+          <div class="ref-card-tag">Fűtésszerelés</div>
+          <div class="ref-card-title">Radiátoros fűtési rendszer teljes csere</div>
+          <div class="ref-card-loc">📍 Kecskemét</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Testimonials -->
+    <div style="margin-top:5rem">
+      <div class="reveal" style="text-align:center;margin-bottom:3rem">
+        <div class="section-tag" style="justify-content:center">Vélemények</div>
+        <h2 class="section-title">Mit <em>mondanak az ügyfeleim</em></h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Nagyon elégedett vagyok a munkával. Precíz, tiszta, határidőre elkészült. Maximálisan ajánlom mindenkinek!"</p>
+          <div class="testimonial-author">K. János</div>
+          <div class="testimonial-role">Kecskemét – Google Review</div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Zalán gyorsan reagált, pontosan jött és profin elvégezte a klímatelepítést. Legközelebb is őt hívom."</p>
+          <div class="testimonial-author">M. Péterné</div>
+          <div class="testimonial-role">Kecskemét – Facebook</div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„A padlófűtés telepítés tökéletesen sikerült. Érthetően elmagyarázott mindent és nem volt rejtett költség."</p>
+          <div class="testimonial-author">Sz. Ádám</div>
+          <div class="testimonial-role">Bács-Kiskun megye – Szakember.hu</div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">„Kiváló szakember, megbízható és pontos. A kazáncsere hibátlanul ment, azóta tökéletesen melegít."</p>
+          <div class="testimonial-author">V. László</div>
+          <div class="testimonial-role">Kecskemét – Google Review</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip reveal">
+  <h2>Legyen az Ön projektje a következő!</h2>
+  <p>Vegye fel velem a kapcsolatot – ingyenes felmérést végzek Kecskeméten és környékén.</p>
+  <a href="../kapcsolat/index.html" class="btn-white">Kapcsolatfelvétel →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="footer-brand-logo" href="../index.html"><span>ZT</span> Épületgépészet</a>
+        <p class="footer-brand-desc">Innovatív épületgépészeti megoldások víz-, gáz-, fűtés- és klímatechnikában.</p>
+        <div class="footer-social"><a href="https://www.facebook.com/profile.php?id=61583192375424" target="_blank" rel="noopener">📘 Facebook</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigáció</div>
+        <ul class="footer-col-links">
+          <li><a href="../index.html">Főoldal</a></li>
+          <li><a href="../szolgaltatasaim/index.html">Szolgáltatásaim</a></li>
+          <li><a href="index.html">Referenciák</a></li>
+          <li><a href="../kapcsolat/index.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Elérhetőség</div>
+        <ul class="footer-col-links">
+          <li><a href="tel:+36202210555">+36/20 221 0555</a></li>
+          <li><a href="mailto:ztepuletgepeszet@gmail.com">ztepuletgepeszet@gmail.com</a></li>
+          <li>6000 Kecskemét</li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Jogi</div>
+        <ul class="footer-col-links">
+          <li><a href="../adatvedelem/index.html">Adatvédelem</a></li>
+          <li><a href="../aszf/index.html">ÁSZF</a></li>
+          <li><a href="../impresszum/index.html">Impresszum</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ZT Épületgépészet – Minden jog fenntartva.</span>
+      <span><a href="../adatvedelem/index.html">Adatvédelem</a> · <a href="../aszf/index.html">ÁSZF</a> · <a href="../impresszum/index.html">Impresszum</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+  // Filter logic
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      document.querySelectorAll('#ref-grid .ref-card').forEach(function(card) {
+        if (filter === 'all' || card.dataset.cat === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
